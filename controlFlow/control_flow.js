@@ -49,3 +49,20 @@ let isAuthenticated = true;
 let authenticatedStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticatedStatus);
+
+let personType = "Employee";
+
+switch (personType) {
+    case "Employee":
+        console.log("Authorized to access \"Dietary Services\"");
+        break;
+    case "Enrolled Member":
+        console.log("Authorized to access \"Dietary Services\" and one-on-one interaction with a dietitian.");
+        break;
+    case "Subscriber":
+        console.log("Authorized partial access to \"Dietary Services\"");
+        break;
+    case "Non-Subscriber":
+        console.log("You need to enroll or at least subscribe first to avail this facility.");
+        break;
+}
