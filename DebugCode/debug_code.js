@@ -6,13 +6,25 @@ function performOperation() {
     // Check if inputs are valid numbers
     if (!isNaN(num1) && !isNaN(num2)) {
         // Perform the operation
-        let result = multiply(num1, num2);
+        let addResult = add(num1, num2);
+        let multiplyResult = multiply(num1, num2);
+        let divideResult = add(num1, num2);
+
 
         // Display the result
-        displayResult(result);
+        displayResult(addResult);
+        displayResult(multiplyResult);
+        displayResult(divideResult);
     } else {
         displayResult("Please enter valid numbers.");
     }
+}
+
+function add(num1, num2) {
+    debugger;
+
+    // Add the numbers
+    return num1 + num2;
 }
 
 function multiply(num1, num2) {
@@ -22,6 +34,13 @@ function multiply(num1, num2) {
     // Multiply the numbers
     return num1 * num2;
 }
+
+function divide(num1, num2) {
+    debugger;
+
+    return num1 / num2;
+}
+
 
 function displayResult(result) {
     // Display the result in the paragraph element
