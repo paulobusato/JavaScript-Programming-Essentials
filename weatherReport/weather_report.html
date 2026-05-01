@@ -7,10 +7,28 @@
 <body>
 <h1>Weather Report</h1>
 
-<form id="weatherForm">
+<h2>Fetch By City Name</h2>
+
+<form id="fetchByCityForm">
     <label for="city">Enter City:</label>
     <input type="text" id="city" name="city">
     <button type="submit">Get Weather</button>
+</form>
+
+<h2>Fetch By Latitude and Longitude</h2>
+
+<form id="fetchByLatLongForm">
+    <div>
+        <label for="latitude">Enter Latitude:</label>
+        <input type="text" id="latitude" name="latitude">
+    </div>
+    <div>
+        <label for="longitude">Enter Longitude:</label>
+        <input type="text" id="longitude" name="longitude">
+    </div>
+    <div>
+        <button type="submit">Get Weather</button>
+    </div>
 </form>
 
 <div id="weatherInfo"></div>
